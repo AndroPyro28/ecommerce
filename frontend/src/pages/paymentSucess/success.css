@@ -1,0 +1,42 @@
+.success__screen__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+    background: linear-gradient(rgb(195, 240, 241), rgb(190, 253, 190));
+    justify-content: center ;
+    align-items: center ;
+    text-align: center;
+}
+
+.success__screen__container h1{
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+.redirectSuccess {
+    margin-top: 70px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(24, 48, 24);
+    cursor: pointer;
+}
+
+.redirectSuccess:hover {
+    background-color: rgb(31, 37, 15);
+}
+
+ .success__screen__container h1 > .calendar{
+    color: rgb(39, 110, 89);
+    font-size: 40px;
+}
+
+.success__screen__container .check {
+    padding: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(9, 247, 9);
+    font-size: 100px;
+}

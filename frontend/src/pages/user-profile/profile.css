@@ -1,0 +1,83 @@
+.user__profile__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.user__profile__picture {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+
+.image__uploader {
+  display: flex;
+  flex-direction: column;
+}
+
+.image__uploader img,
+.image__uploader button {
+  margin: 10px;
+}
+
+.image__uploader button {
+  z-index: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 95px;
+  left: 10px;
+  background-color: rgb(2, 46, 87);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  color: white;
+}
+.image__uploader button:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.user__profile__name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.user__description__container {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.user__description__container span {
+  background-color: rgba(87, 126, 255, 0.808);
+  border-radius: 5px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.user__profile__background {
+  height: 350px;
+  width: 100%;
+  display: flex;
+ 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width: 900px) {
+  .image__uploader button {
+    top: 85px;
+  }
+}

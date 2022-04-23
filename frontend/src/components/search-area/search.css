@@ -1,0 +1,50 @@
+.search__product__area {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.search__product__area button {
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(5, 90, 201);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search__product__area button:hover {
+    background-color: black;
+}
+.refresh {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.refresh:hover {
+    background-color: black;
+    color: white;
+}
+
+.search__product__area input {
+    height: 29px;
+    border: solid 2px rgb(224, 175, 11);
+    background: linear-gradient(rgb(223, 247, 250), rgb(221, 241, 221));
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+@media(max-width:400px) {
+    .search__product__area input {
+        width: 130px;
+    }
+}

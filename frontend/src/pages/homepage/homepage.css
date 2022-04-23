@@ -1,0 +1,112 @@
+.homepage__container {
+    font-family: sans-serif; 
+}
+
+.homepage__container .homepage__banner h1 { 
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+    
+}
+
+.browse__products {
+    padding: 20px;
+    font-weight: 1000;
+    border: solid 3px black;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.browse__products:hover {
+    background-color: black;
+    color: white;
+}
+
+.homepage__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 122);
+    color: black;
+    height: 400px;
+    
+}
+
+.section__1 {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.section__2 {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.section__1 p {
+    font-size: 20px;
+    word-break: break-all;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section__1 img {
+    width: 45%;
+    height: 45%;
+    float: left;
+}
+
+.section__2 p {
+    font-size: 20px;
+    word-break: break-all;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 100px;
+}
+
+.section__1, .section__2 {
+    padding: 50px;
+}
+
+.section__2 img {
+    width: 45%;
+    height: 45%;
+    float: right;
+}
+
+@media (max-width: 900px) {
+    .section__1 img { 
+        height: 250px;
+        width: 100%;
+    }
+
+    .section__2 img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .section__1, .section__2 { 
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+    }
+    .homepage__banner {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .section__2 p {
+        font-size: 15px;
+        margin-right: 0px;
+    }
+
+    .section__1 p {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+}

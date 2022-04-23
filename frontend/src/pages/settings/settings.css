@@ -1,0 +1,134 @@
+.settings__body {
+  background-color: white;
+  display: flex;
+  height: 86vh;
+  width: 99vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(228, 239, 245), rgb(221, 245, 232));
+}
+
+.settings__main__container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 70vw;
+  height: 75vh;
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.setting__container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.setting__label {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  margin-left: 15px;
+}
+.setting__info__user {
+  text-align: center;
+
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  color: rgb(75, 72, 72);
+}
+
+.setting__button {
+  text-align: center;
+
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 30px;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.setting__container:hover {
+  background-color: rgb(227, 250, 252);
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .settings__main__container {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .settings__main__container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .settings__main__container {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .settings__main__container {
+    width: 100vw;
+  }
+
+  .setting__label {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  /* .setting__info__user {
+        font-size: 12px;
+    } */
+
+  .settings__main__container {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* .setting__info__user {
+        font-size: 12px;
+    } */
+  .setting__info__user {
+    flex: 2;
+  }
+
+  .setting__label {
+    font-size: 13px;
+  }
+
+  
+}
+
+@media (max-width: 350px) {
+    .settings__main__container {
+        overflow: hidden;
+    }
+
+    .setting__button {
+        margin-right: 5px;
+    }
+
+    .setting__label {
+        margin-left: 5px;
+        margin-right:5px;
+    }
+}

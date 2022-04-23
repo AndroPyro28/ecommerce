@@ -1,0 +1,108 @@
+.payment__container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.list__of__products {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    width: 100%;
+}
+.payment_header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.paypal__container {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    width: 200px;
+    height: 200px;
+}
+.check__icon {
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 20px;
+    padding:10px;
+    
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.check__icon:hover{
+    background-color: black;
+
+}
+.buy {
+    color: rgb(2, 250, 2);
+}
+
+.notBuy {
+    color: red;
+}
+.payment_instruction {
+    text-align: end ;
+    margin-right: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.total__container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.total__container span:nth-child(2) {
+    margin-right: 30px;
+}
+
+
+
+.redirectMarket {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: 50px;
+    display: block;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.redirectMarket:hover {
+  
+    color: black;
+}
+
+@media(max-width: 900px)
+{
+    .payment__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .check__icon {
+        margin-left: 0px;
+        margin-right: -10px;
+    }
+
+    .list__of__products {
+        margin-left: 0px;
+    }
+    .payment_instruction {
+        text-align: center ;
+        margin-right: 0px;
+    }
+    
+}
+
+@media(max-width: 359px) {
+    .label {
+        display: none;
+    }
+}
+

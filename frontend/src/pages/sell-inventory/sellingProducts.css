@@ -1,0 +1,155 @@
+.list__selling__products h1 {
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.inventory__item__product {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.item__image {
+    margin-right: 40px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.product__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.item__title strong {
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+
+}
+.item__title span {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-size: 17px;
+    color: rgb(44, 43, 43);
+
+}    
+.item__title {
+    font-size: 13px;
+}
+
+.inventory__item {
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
+    /* border: solid 1px grey; */
+    border-radius: 10px;
+    display: flex;
+}
+
+.icon__command {
+    position: absolute;
+    top: 0px;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.icon__command:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.delete__icon {
+    right: 0px;
+    color: red;
+}
+
+.edit__icon {
+    right: 40px;
+    color: rgb(0, 54, 0);
+}
+
+@media (max-width:900px) {
+
+    .inventory__item {
+        width: 70%;
+    }
+    .item__title strong {
+        font-size: 16px;
+    
+    }
+    .item__title span {
+        font-size: 15px;
+    }    
+}
+
+@media (max-width:725px) {
+
+    .inventory__item {
+        width: 80%;
+    }
+    .item__title strong {
+        font-size: 14px;
+    
+    }
+    .item__title span {
+        font-size: 13px;
+    }    
+}
+
+@media (max-width:653px) {
+
+    .inventory__item {
+        width: 90%;
+    }  
+    .item__image {
+        width: 170px;
+        height: 170px;
+    
+    }
+}
+
+@media (max-width:610px) {
+
+    .inventory__item__product {
+        padding: 20px;
+    }
+
+    .inventory__item {
+        width: 95%;
+    }  
+    .item__image {
+        width: 180px;
+        height: 180px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:555px) {
+    .inventory__item {
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+
+    } 
+
+    .item__image {
+        width: 160px;
+        height: 160px;
+        margin: 30px;
+    }
+}
+
+@media (max-width:450px) {
+    .item__image {
+        margin-bottom: 10px;
+    }
+}

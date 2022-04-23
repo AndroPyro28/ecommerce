@@ -1,0 +1,37 @@
+.UnProtectedSidebar__container {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  background-color: white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.UnProtectedSidebar__container a {
+  width: 100%;
+  height: 100%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+.UnProtectedSidebar__container a:hover {
+  background-color: black;
+  color: white;
+}
+.backdrop {
+  cursor: pointer;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: block;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(36, 34, 34, 0.342);
+}

@@ -1,0 +1,139 @@
+.changename__main__container {
+  height: 86vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 247, 252);
+}
+
+.changename__form {
+    padding: 10px;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 75vh;
+  box-shadow: 2px 2px 10px black;
+}
+.changename__form h2 {
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
+.changename__form input {
+  height: 30px;
+  width: 40%;
+  margin: 10px;
+  font-size: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+  outline: none;
+  padding-left: 10px;
+}
+.button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.changename__form .button__container .button {
+  width: fit-content;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+
+.changename__form .button__container .button:hover {
+  background-color: black;
+  color: white;
+}
+
+.changename__form .button__container a {
+  height: 30px;
+  width: 200px;
+  border: solid 1px grey !important;
+}
+
+.changename__form p {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .changename__form input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+    .changename__form input {
+      width: 55%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .changename__form input {
+      width: 60%;
+    }
+    .changename__form p {
+        font-size: 13px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .changename__form input {
+      width: 65%;
+    }
+    .changename__form {
+    width: 75vw;
+        
+    }
+  }
+
+  @media (max-width: 600px) {
+    .changename__form input {
+      width: 70%;
+    }
+    .changename__form {
+        width: 79vw;    
+    }
+  }
+
+  @media (max-width: 450px) {
+    .changename__form input {
+      width: 75%;
+    }
+
+    .changename__form {
+        width: 82vw;
+            
+        }
+
+    .changename__form .button__container .button {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+    .changename__form input {
+      width: 75%;
+    }
+
+    .changename__form {
+        width: 85vw;
+            
+        }
+
+    .changename__form .button__container .button {
+    font-size: 80%;
+  }
+}

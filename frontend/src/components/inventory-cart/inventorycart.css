@@ -1,0 +1,238 @@
+.inventory__cart__backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: 20000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory__cart__container {
+    position: relative;
+    border-radius: 10px;
+    height: 85%;
+    background-color: white;
+    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+.inventory__cart__container h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.label__container {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.update__container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+
+.update__container button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(245, 207, 137);
+    color: black;
+    font-weight: 700;
+}
+.update__container button:hover {
+    color: orangered;
+}
+.label__container span  {
+    font-weight: 700;
+    font-size: 19px;
+}
+.item__product {
+    background-color: black;
+    width: 100%;
+}
+
+.label__container span:nth-child(1) {
+    margin-left: 20px;
+}
+.label__container span:nth-child(2) {
+    margin-right: 25px;
+}
+
+.product__list {
+    height: 60%;
+    width: 100%;
+    overflow: auto;
+}
+.checkout__button {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(66, 227, 255);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 97%;
+    cursor: pointer;
+}
+
+.checkout__button:hover{
+    background-color: black;
+}
+
+.inventory_item_product {
+   
+    height: 82px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory_item_img {
+    height: 100%;
+    max-width: 92px;
+    float: left;
+    margin-right: 5px;
+}
+
+.inventory__left {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.inventory__right {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(65, 64, 64);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.inventory__right span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    padding: 10px;
+    text-align: center;    
+    justify-content: space-between;
+}
+
+.inventory__right span button{
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+   margin-left: 10px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.inventory__right span button:hover{
+    background-color: rgb(151, 231, 255);
+}
+
+
+.inventory__right span .btn-add {
+    color: rgb(0, 212, 18);
+}
+
+.inventory__right span .btn-minus {
+    color: rgb(241, 12, 12);
+}
+
+.disabled {
+    color: rgb(209, 204, 204) !important;
+}
+
+@media (max-width: 1000px) {
+    .inventory__cart__container { 
+    width: 50%;
+}
+}
+
+@media (max-width: 900px) {
+    .inventory__cart__container { 
+    width: 55%;
+}
+}
+
+@media (max-width: 800px) {
+    .inventory__cart__container { 
+    width: 60%;
+}
+}
+
+@media (max-width: 700px) {
+    .inventory__cart__container { 
+    width: 65%;
+}
+}
+
+@media (max-width: 600px) {
+    .inventory__cart__container { 
+    width: 70%;
+}
+}
+@media (max-width:500px) {
+    .inventory__cart__container { 
+        width: 80%;
+    }
+}
+
+@media (max-width:450px) {
+    .inventory__cart__container { 
+        width: 85%;
+    }
+}
+
+@media (max-width:470px) {
+    .inventory__cart__container { 
+        width: 90%;
+    }
+}
+
+@media (max-width:400px) {
+    .inventory__cart__container { 
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .inventory__right {
+        font-size: 15px;
+    }
+
+    .label__container span  {
+        font-size: 15px;
+    }
+
+    .inventory__right span button{
+        border: none;
+        font-size: 18px;
+       margin-left: 5px;
+       margin-right: 5px;
+    }
+
+    .inventory__left span .strong{
+        font-size: 14px;
+    }
+
+    .inventory__left span .label{
+        font-size: 14px;
+    }
+}

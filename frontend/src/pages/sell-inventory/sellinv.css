@@ -1,0 +1,192 @@
+.sell__item__backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  background-color: rgba(22, 21, 21, 0.384);
+}
+.form__sell__inventory {
+  width: 85vw;
+  height: 95vh;
+  margin: 15px auto;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sell__item__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  width: 100%;
+}
+
+.sell__item__input textarea,
+.sell__item__input input {
+  font-size: 17px;
+  border-radius: 5px;
+  border: solid 1px grey;
+  font-weight: 700;
+  padding-left: 10px;
+  width: 45%;
+}
+.file__input p {
+  text-align: center;
+  color: grey;
+  margin: 0px;
+}
+.file__input {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sell__input__file {
+  justify-content: center;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 20px 31px;
+  cursor: pointer;
+  background: rgb(158, 252, 220);
+  width: 90%;
+}
+
+.sell__input__file:hover {
+  background: linear-gradient(
+    rgb(165, 214, 247),
+    rgb(165, 248, 165),
+    rgb(253, 195, 204)
+  );
+}
+
+.sell__item__input input {
+  height: 40px;
+}
+
+.sell__item__input select {
+  cursor: pointer;
+  width:34%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.sell__item__input button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.sell__item__input button {
+  width: 45%;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(23, 133, 223);
+  color: white;
+}
+.sell__item__input textarea {
+  height: 60px;
+  resize: none;
+}
+
+.list__selling__products button {
+  z-index: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  background-color: rgb(2, 46, 87);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  color: white;
+}
+.list__selling__products button:hover {
+  background-color: black;
+}
+.sell__item__input button:hover {
+  background-color: rgb(12, 12, 12);
+}
+.sell__item__input button:disabled {
+  cursor:default;
+  background-color: grey !important;
+}
+
+@media (max-width: 1000px) {
+  .sell__input__file {
+    width: 100%;
+  }
+  .sell__item__input span { 
+    font-size: 15px;
+  }
+  .sell__item__input select { 
+    width: 65%;
+    font-size: 15px;
+  }
+  .sell__item__input textarea,
+  .sell__item__input input {
+    width: 80%;
+    height: 35px;
+  font-size: 15px;
+
+  }
+
+  .sell__item__input button {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 782px) {
+  .sell__item__input span { 
+    font-size: 15px;
+  }
+  .sell__item__input select {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sell__item__input span { 
+    font-size: 13px;
+  }
+  .sell__item__input select {
+    width: 50%;
+  }
+}
+@media (max-width: 454px) {
+  .sell__input__file {
+    width: 60%;
+  }
+  .sell__item__input textarea,
+  .sell__item__input input {
+    font-size: 12px;
+    width: 80%;
+    height: 35px;
+  }
+  
+  .sell__item__input span { 
+    font-size: 13px;
+    
+  }
+  .sell__item__input select { 
+    font-size: 12px;
+    width: 40%;
+  }
+
+  .sell__item__input button {
+    width: 82%;
+    margin-top: 0;
+  }
+}

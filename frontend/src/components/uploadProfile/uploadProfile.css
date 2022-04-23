@@ -1,0 +1,83 @@
+.profile__upload__container {
+  width: 85vw;
+  height: 85vh;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.displayImg {
+  /* width: 230px;
+  height: 25%; */
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  border: solid 2px black;
+  
+}
+.profile__upload__container input {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  background:rgb(158, 252, 220);
+}
+.profile__upload__container input:hover {
+    background: linear-gradient(rgb(165, 214, 247), rgb(165, 248, 165), rgb(253, 195, 204));
+}
+.profile__upload__container button {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+ border: none;
+ background-color: rgb(24, 142, 253);
+ color: white;
+ cursor: pointer;
+}
+
+.profile__upload__container button:disabled {
+  cursor:default;
+  background-color: grey !important;
+}
+
+.profile__upload__container button:hover {
+    background-color: black;
+}
+
+.profile__upload__container h1 {
+  position: absolute;
+  top: 50px;
+}
+
+.exit__button {
+    cursor: pointer;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  color: red;
+  font-size: 30px;
+}
+
+.exit__button:hover {
+    color: rgb(65, 9, 9);
+}
+
+@media(max-width: 450px) {
+    .profile__upload__container input {
+        width: 50%;
+      }
+
+      .profile__upload__container button {
+        padding: 13px;
+      }
+      
+}
